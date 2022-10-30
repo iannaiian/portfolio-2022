@@ -12,8 +12,9 @@ const Header = () => {
 
   useEffect(() => {
     setMounted(true);
-    setTheme("dark");
-  }, []);
+
+    window.localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
