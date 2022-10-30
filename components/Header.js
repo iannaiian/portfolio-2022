@@ -24,7 +24,7 @@ const Header = () => {
     if (currentTheme === "dark") {
       return (
         <Button
-          className="bg-gray-200 dark:bg-gray-600"
+          className="bg-gray-200 dark:bg-blue"
           onClick={() => setTheme("light")}
         >
           <svg

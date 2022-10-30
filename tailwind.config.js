@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         "dark-blue": "#090714",
+        blue: "#110E26",
       },
       fontFamily: {
         heading: ["Bebas Neue", "cursive"],
