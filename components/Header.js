@@ -62,21 +62,15 @@ const Header = () => {
       <div className="fixed w-full z-50">
         <div className="container py-6 flex justify-between">
           <div>
-            {theme === "dark" ? (
-              <Image
-                layout="intrinsic"
-                width={188}
-                height={41}
-                src={LogoLight}
-              />
-            ) : (
-              <Image
-                layout="intrinsic"
-                width={188}
-                height={41}
-                src={LogoDark}
-              />
-            )}
+            <Image
+              className={` transition duration-300 ${
+                theme === "dark" ? "filter invert" : ""
+              }`}
+              layout="intrinsic"
+              width={188}
+              height={41}
+              src={LogoDark}
+            />
           </div>
           <div> {renderThemeChanger()}</div>
         </div>
