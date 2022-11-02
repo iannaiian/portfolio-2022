@@ -16,7 +16,7 @@ const Hero = () => {
 
   console.log(theme);
   return (
-    <div className="relative lg:h-screen h-full bg-cover">
+    <div className="relative lg:h-screen h-full bg-cover overflow-hidden">
       {/* <div id={"globalLoader"}>
         <div className="loader">
           <div />
@@ -34,17 +34,23 @@ const Hero = () => {
         <div className="relative container h-full z-10">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 items-center h-full">
             <div className="lg:text-left text-center">
-              <h1 className="text-6xl leading-none mb-6">
-                Not Your typical web developer and designer.
+              <h1 className="text-7xl leading-none mb-6">
+                I’m a SELF MADE Front-end web developer.
               </h1>
-              <p className="text-xl w-4/5 lg:mx-0 mx-auto">
+              <p className="text-lg w-4/5 lg:mx-0 mx-auto">
                 My name is Ian Josef and I love to design and develop websites.
                 JAMStack is my weapon of choice and you can check some of my
                 work below. :)
               </p>
             </div>
-            <div className="relative flex lg:justify-end justify-center">
-              <Image layout="" objectFit="contain" src={profilePic} />
+            <div className="relative flex lg:justify-end justify-center  ">
+              <div className="relative main-photo">
+                <Image
+                  className="shadow-lg rounded-3xl"
+                  objectFit="contain"
+                  src={profilePic}
+                />
+              </div>
             </div>
           </div>
         </div>

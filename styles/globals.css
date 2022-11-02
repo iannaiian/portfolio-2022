@@ -142,4 +142,18 @@ body {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-} ;
+}
+
+.main-photo {
+  position: relative;
+}
+
+.main-photo:before {
+  position: absolute;
+  content: "";
+  background: url(../public/images/dots.svg);
+  width: 606px;
+  height: 606px;
+  top: -13%;
+  left: -16%;
+}
